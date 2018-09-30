@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>AC 4</title>
+        <link href="estilo.css" rel="stylesheet" type="text/css">
+        <link href="form.css" rel="stylesheet" type="text/css">
+    </head>
+        <body>
+            <!--PRIMEIRO FORMULARIO-->
+            <form>
+                <!--TITULO-->
+                <h2 class="h1">Vaga de estágio em 
+                    <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+                </h2>
+                    <!--INICIO FIELDSET-->
+                    <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <!--NOME-->
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" required= pattern="[A-Z][A-Za-z]{2,} [A-Z][A-Za-z]{2,}"><br><br>
+                    <!--EMAIL-->
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" required= maxlength="100"><br><br>
+                    <!--SENHA-->
+                    <label for="senha">Senha para login no processo de seleção:</label>
+                    <input type="password" id="senha" required placeholder="(mínimo de 6 caracteres)" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*${4}" title="Insira uma Letra maiuscula, minuscula, uma letra e um caracter especial."><br><br>
+                    <!--TELEFONE-->
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" data-mask="(00) 0000-0000" placeholder="(DDD e Número)" required pattern="\([0-9]{2}\) [0-9]{4}-[0-9]{4}"><br><br>
+                    <!--DATA DE INGRESSO-->
+                    <label for="dataNascimento">Data de nascimento:</label>
+                    <input type="date" id="data" required><br><br>
+                    </fieldset><br>
+            <!--ENVIAR-->
+            <button type="submit">Prosseguir</button><br><br>
+            <!--BARRA DE PROGRESSO-->
+            <progress max="100" value="0" class="barra_carregamento"></progress> :-/
+            </form>
+            <br>
+            <!--ULTIMO FORMULARIO-->
+            <form>
+                <!--TITULO-->
+                <h2 class="h1">Vaga de estágio em 
+                    <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+                </h2>
+                <!--UPLOAD ARQUIVO-->
+                Upload do seu arquivo em <b>PDF</b>:<br>
+                <input type="file" id="arquivoPDF" required><br><br>
+                <!--CAMPO DE TEXTO-->
+                Deseja acrescentar algo não requerido no formulário?
+                <textarea id="textomsg"></textarea><br>
+                <!--ENVIAR-->
+                <button type="submit">Enviar Dados</button><br><br>
+                <!--BARRA DE PROGRESSO-->
+                <progress max="100" value="65" class="barra_carregamento"></progress> :-)
+            </form>
+        </body>
+</html>
