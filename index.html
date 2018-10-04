@@ -11,14 +11,14 @@
             <form>
                 <!--TITULO-->
                 <h2 class="h1">Vaga de estágio em 
-                    <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+                <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
                 </h2>
                     <!--INICIO FIELDSET-->
-                    <fieldset>
+                    <fieldset class="teste">
                     <legend>Dados pessoais</legend>
                     <!--NOME-->
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" required pattern="[A-Z][A-Za-z]{2,} [A-Z][A-Za-z]{2,}" title="Padrão: Matheus Pereira"><br><br>
+                    <input type="text" name="nome" required pattern="[A-Z][A-Za-z]{2,} [A-Z][A-Za-z]{2,}" title="Padrão: Matheus Pereira" autofocus><br><br>
                     <!--EMAIL-->
                     <label for="email">E-mail:</label>
                     <input type="email" id="email" required maxlength="100"><br><br>
@@ -27,7 +27,7 @@
                     <input type="password" id="senha" required placeholder="(mínimo de 6 caracteres)" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Insira uma Letra maiuscula, minuscula, uma letra e um caracter especial."><br><br>
                     <!--TELEFONE-->
                     <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" data-mask="(00) 0000-0000" placeholder="(DDD e Número)" required pattern="\([0-9]{2}\) [0-9]{4}-[0-9]{4}"><br><br>
+                    <input type="tel" id="telefone" name="telefone" data-mask="(00) 0000-0000" placeholder="(DDD e Número)" required pattern="\([0-9]{2}\) [0-9]{4}-[0-9]{4}" title="Padrão: (00) 0000-0000"><br><br>
                     <!--DATA DE INGRESSO-->
                     <label for="dataNascimento">Data de nascimento:</label>
                     <input type="date" id="data" required><br><br>
@@ -42,11 +42,11 @@
             <form>
                 <!--TITULO-->
                 <h2 class="h1">Vaga de estágio em 
-                    <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+                <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
                 </h2>
                 <!--UPLOAD ARQUIVO-->
                 Upload do seu arquivo em <b>PDF</b>:<br>
-                <input type="file" id="arquivoPDF" required><br><br>
+                <input type="file" id="arquivoPDF" required accept=".pdf"></br><br>
                 <!--CAMPO DE TEXTO-->
                 Deseja acrescentar algo não requerido no formulário?
                 <textarea id="textomsg"></textarea><br>
